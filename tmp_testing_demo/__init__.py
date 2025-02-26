@@ -15,7 +15,4 @@ This is the complete API reference:
 
 __version__ = "0.0.1"  # denote a pre-release for 0.1.0 with 0.1rc1
 
-from lamindb_setup import _check_instance_setup
-
-if _check_instance_setup():
-    from ._core import ExampleClass, save_dataframe
+from tmp_testing_demo._core import ExampleClass, save_dataframe
