@@ -1,13 +1,11 @@
-def example_function(column_name: str) -> str:
-    """Lower case your input string.
+import lamindb as ln
+import pandas as pd
 
-    Args:
-        column_name: Column name to transform to lower case.
 
-    Returns:
-        The lower-cased column name.
-    """
-    return column_name.lower()
+def save_dataframe(df: pd.DataFrame, description: str) -> ln.Artifact:
+    import lamindb as ln
+
+    return ln.Artifact.from_df(df, description=description).save()
 
 
 class ExampleClass:
