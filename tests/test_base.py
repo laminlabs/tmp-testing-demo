@@ -12,4 +12,4 @@ def test_that_uses_instance(setup_instance):
     # clean up artifacts and stuff that might have side effects
     # generally, be careful with concurrency and try not to write
     # tests that depend on others
-    af.delete()
+    af.delete(permanent=True)
